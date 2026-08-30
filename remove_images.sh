@@ -8,4 +8,4 @@ echo Manifest Digests removed: $DIGESTS
 
 CMD="doctl registry garbage-collection start --include-untagged-manifests --force"
 echo Running $CMD
-$CMD
+$CMD || true
